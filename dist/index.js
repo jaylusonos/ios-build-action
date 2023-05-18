@@ -73,7 +73,7 @@ async function run() {
     process.env.APP_STORE_CONNECT_API_KEY_BASE64 = core.getInput('app-store-connect-api-key-base64');
     process.env.BUILD_PATH = core.getInput('build-path');
     process.env.CUSTOM_KEYCHAIN_NAME = core.getInput('custom-keychain-name');
-    process.env.ARCHIVE_PATH = core.getInput('archive_path');
+    process.env.ARCHIVE_PATH = core.getInput('archive-path');
 
     // Execute build.sh
     await exec.exec(`bash ${__dirname}/../build.sh`);
