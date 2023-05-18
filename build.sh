@@ -9,5 +9,10 @@ if ! type fastlane > /dev/null 2>&1; then
 fi
 
 script_path=$(cd $(dirname ${0}); pwd)
-cp -r ${script_path}/fastlane ./
+
+if [ ! -d "./fastlane" ] 
+then
+    echo "fastlane dir does not exist, copying default config"
+    cp -r ${script_path}/fastlane ./
+fi
 fastlane export_ipa
