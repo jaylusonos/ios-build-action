@@ -119,7 +119,7 @@ inputs:
     required: false
     default: "ios-build.keychain"
   archive_path:
-    description: 'Custom path to the created archive
+    description: 'Custom path to the created archive'
     required: false
     default: "~/Library/Developer/Xcode/Archives"
 runs:
