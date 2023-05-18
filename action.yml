@@ -118,10 +118,10 @@ inputs:
     description: 'Custom Keychain Name'
     required: false
     default: "ios-build.keychain"
-  archive_path:
-    description: 'Custom path to the created archive'
+  archive-path:
+    description: 'Archive path'
     required: false
-    default: "~/Library/Developer/Xcode/Archives"
+    default: ""
 runs:
   using: "node16"
   main: "dist/index.js"
